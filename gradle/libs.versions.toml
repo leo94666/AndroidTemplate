@@ -1,0 +1,55 @@
+[versions]
+agp = "8.9.1"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+junit = "4.14-SNAPSHOT"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.9.1"
+activityCompose = "1.10.1"
+composeBom = "2024.09.00"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+########################
+glide = { module = "com.github.bumptech.glide:glide", version = "4.16.0" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version = "4.16.0" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version = "4.12.0" }
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version = "2.9.1" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version = "2.8.4" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version = "2.11.0" }
+rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version = "2.1.1" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version = "2.2.21" }
+rxkotlin = { module = "io.reactivex.rxjava2:rxkotlin", version = "2.4.0" }
+adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version = "2.9.0" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version = "2.9.0" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version = "4.11.0" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version = "2.52" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version = "2.52" }
+########################
+compose-arch = { module = "com.top.compose:arch", version = "1.0.0" }
+arch = { module = "com.top.arch:arch", version = "5.1.9.7" }
+androidx = { module = "com.top.androidx:androidx", version = "5.1.9.6" }
+ffmpeg = { module = "com.top.ffmpeg:ffmpegkit", version = "1.0.0" }
+update = { module = "com.top.update:update", version = "1.0.0" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hilt-library = { id = "com.google.dagger:hilt-android-gradle-plugin", version = "2.44" }
+
